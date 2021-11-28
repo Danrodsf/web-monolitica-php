@@ -13,19 +13,22 @@
     $resultado = $mysqli->query("SELECT id, titulo FROM plato");
 
     //Imprime el resultado
+    //Imprime el resultado
     echo '
         <div class="main flexColumn">
-            <ol>
+            <div class="form">
+                <ol>
         ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
-            <li>
-                <a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>
-            </li>
-            ';
+                <li>
+                    <a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>
+                </li>
+                ';
     }
     echo '
-            </ol>
+                </ol>
+            </div>
         </div>
         ';
 
