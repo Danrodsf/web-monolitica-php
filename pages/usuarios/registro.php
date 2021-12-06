@@ -4,13 +4,27 @@
     require '../../database/db_connect.php';
     
     $mysqli = conectar();
+    $email = $_POST['email'];
 
-    if ($_POST['nombre'] !== "" && $_POST['email'] !== "" && $_POST['contraseña'] !== "") {
-        $mysqli->query('INSERT INTO usuario (nombre, email, contraseña) VALUES ("'.$_POST['nombre'].'","'. $_POST['email'].'","'. $_POST['contraseña'].'");');
-        echo '<div class="main flexColumn"><h2 class="error">Usuario Registrado con éxito</h2><a class="boton flex" href="../../index.php">Volver</a></div>';
+    // revisar primero si el usuario no existe en la BBDD
+    $resultado = $mysqli->query("SELECT * FROM usuario WHERE email='$email'");
+    $reg=$resultado->fetch_assoc();
+
+    if ($reg) {
+
+        echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Este email ya esta registrado a un usuario</h2><a class="btn" href="./registroUsuario.php">Volver</a></div>';
+
     } else {
-        echo '<div class="main flexColumn"><h2 class="error">Por favor rellene todos los campos</h2><a class="boton flex" href="./registroUsuario.php">Volver</a></div>';
-    }
-    
 
+        if ($_POST['nombre'] !== "" && $_POST['email'] !== "" && $_POST['contraseña'] !== "") {
+
+            $mysqli->query('INSERT INTO usuario (nombre, email, contraseña) VALUES ("'.$_POST['nombre'].'","'. $_POST['email'].'","'. $_POST['contraseña'].'");');
+            echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Usuario Registrado con éxito</h2><a class="btn red" href="../../index.php">Volver</a></div>';
+
+        } else {
+
+            echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Por favor rellene todos los campos</h2><a class="btn red" href="./registroUsuario.php">Volver</a></div>';
+        }
+
+    }
 ?>

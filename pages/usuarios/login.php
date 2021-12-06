@@ -1,9 +1,10 @@
 <?php
+    ob_start();
     include '../header.php';
     require '../../database/db_connect.php';
     $mysqli = conectar();
 
-    if ( !isset($_POST['email'], $_POST['contraseña']) )
+    if (!isset($_POST['email'], $_POST['contraseña']) )
             {
 			// Could not get the data that should have been sent.
 			exit('Por favor llene los datos para iniciar sesión!');
@@ -31,18 +32,17 @@
                     $_SESSION['email'] = $email;
                     $_SESSION['contraseña'] = $contraseña;
                     $_SESSION['accesoAdmin'] = $accesoAdmin;
-                    echo 'BIENVENIDO USUARIO : ' . $_SESSION['nombre'] .'!';
-                    header('Location: ./perfilUsuario.php');
+                    header('Location: perfilUsuario.php');
                 } 
             
                 // SI EL USUARIO EXISTE PERO EL PASSWORD NO COINCIDE IMPRIMIR EN PANTALLA PASSWORD INCORRECTO
         
-                else { echo '<div class="main flexColumn"><h2 class="error">Contraseña Incorrecta</h2><a class="boton flex" href="../../index.php">Volver</a></div>'; }
+                else { echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Contraseña Incorrecta</h2><a class="btn red" href="../../index.php">Volver</a></div>'; }
 
             }  
         
                     // SI EL USUARIO NO EXISTE MOSTRAR USUARIO INCORRECTO
-            else { echo '<div class="main flexColumn"><h2 class="error">Usuario Incorrecto</h2><a class="boton flex" href="../../index.php">Volver</a></div>'; }
+            else { echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Usuario Incorrecto</h2><a class="btn red" href="../../index.php">Volver</a></div>'; }
 
         $stmt->close();
     } 

@@ -6,6 +6,6 @@
 
     $mysqli->query("DELETE FROM plato WHERE id=".$_GET["id"]);
 
-    echo '<div class="main flexColumn"><h2 class="error">Plato eliminado con éxito</h2><a class="boton flex" href="./cartaPlatos.php">Volver</a></div>';
+    echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Plato eliminado con éxito</h2><a class="btn red" href="./cartaPlatos.php">Volver</a></div>';
 
 ?>

@@ -15,38 +15,35 @@
     $mysqli = conectar();
 
     //consulta bbdd
-    $resultado = $mysqli->query("SELECT id, titulo, comensales FROM plato");
+    $resultado = $mysqli->query("SELECT id, nombre, cantidad FROM ingrediente");
 
     //Imprime el resultado
     echo '
         <div class="main d-flex justify-content-center align-items-center">
             <div class="card">
-                <h5 class="card-header bg-dark text-white-50">Carta de Platos</h5>
+                <h5 class="card-header bg-dark text-white-50">Lista Ingredientes</h5>
                 <table class="table d-flex flex-column p-4 bg-light">
                     <tr>
-                        <th>Ver Detalles</th>
+                        <th>Ingrediente</th>
+                        <th>Cantidad</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </tr>
             ';
     while ($reg = $resultado->fetch_assoc()) {
-
         echo '
-                    <tr>
-                        <td><a class="btn red" href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a></td>
-                        <td><a class="btn red" href="./editarPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '&comensales=' . $reg['comensales'] . '"><i class="bi bi-pencil-square"></i></a></td>
-                        <td><a class="btn red" href="./eliminarPlato.php?id=' . $reg['id'] .'"><i class="bi bi-trash"></i></a></td>
-                    </tr>
-                    ';
-
+            <tr>
+                <td><p>' . $reg['nombre'] . '</p></td>
+                <td><p>' . $reg['cantidad'] . '</p></td>
+                <td><a class="btn red" href="./editarIngrediente.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&cantidad=' . $reg['cantidad'] . '"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a class="btn red" href="./eliminarIngrediente.php?id=' . $reg['id'] .'"><i class="bi bi-trash"></i></a></td>
+            </tr>
+            ';
     }
     echo '
-                </table>
-                <a class="btn btn-danger" href="./crearPlato.php">Crear plato</a>
-            </div>
+            </table>
+            <a class="btn btn-danger" href="./crearIngrediente.php">Crear ingrediente</a>
         </div>
-        ';
-
-
+    </div>';
 
 ?>

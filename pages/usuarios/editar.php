@@ -13,6 +13,6 @@
     // Consulta
     $mysqli->query("UPDATE usuario SET nombre = '$nombre', email = '$email', accesoAdmin = '$accesoAdmin' WHERE id='$id'");
 
-    echo '<div class="main flexColumn"><h2 class="error">Usuario editado con éxito</h2><a class="boton flex" href="./mostrarUsuarios.php">Volver</a></div>';
+    echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Usuario editado con éxito</h2><a class="btn red" href="./mostrarUsuarios.php">Volver</a></div>';
 
 ?>

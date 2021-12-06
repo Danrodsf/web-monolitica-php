@@ -13,6 +13,6 @@
     // Consulta
     $mysqli->query("UPDATE plato SET titulo = '$titulo', comensales = '$comensales', tipo = '$tipo' WHERE id='$id'");
 
-    echo '<div class="main flexColumn"><h2 class="error">Plato editado con éxito</h2><a class="boton flex" href="./cartaPlatos.php">Volver</a></div>';
+    echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Plato editado con éxito</h2><a class="btn red" href="./cartaPlatos.php">Volver</a></div>';
 
 ?>
