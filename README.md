@@ -17,9 +17,9 @@ Daniel Rodriguez
 
 ## Sobre el Proyecto
 
-<img src=https://raw.githubusercontent.com/Danrodsf/web-monolitica-php/img/home.png width="1000" height="600">
+<img src=https://raw.githubusercontent.com/Danrodsf/web-monolitica-php/main/img/home.png width="1000" height="600">
 
-<img src=https://raw.githubusercontent.com/Danrodsf/web-monolitica-php/img/details.png width="1000" height="600">
+<img src=https://raw.githubusercontent.com/Danrodsf/web-monolitica-php/main/img/details.png width="1000" height="600">
 
 Los requisitos para este proyecto serian:
 
