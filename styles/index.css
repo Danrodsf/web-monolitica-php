@@ -8,10 +8,11 @@
 html,
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 .main {
-  height: 94vh;
+  height: 96vh;
   background-color: lavender;
 }
 

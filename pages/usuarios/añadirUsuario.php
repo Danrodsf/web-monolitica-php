@@ -19,8 +19,8 @@
                     <input class="m-3" type="text" name="nombre" placeholder="Nombre" pattern="^[A-Za-z0-9 ]{3,16}$" title="Min. 3 caracteres y solo admite letras, numeros y espacios" required/>
                     <label for="email">Email</label>
                     <input class="m-3" type="email" name="email" placeholder="Email" required/>
-                    <label for="contraseña">Contraseña</label>
-                    <input class="m-3" type="password" name="contraseña" placeholder="Contraseña" pattern="^.{4,20}$" title="Min. 4 caracteres" required/>
+                    <label for="contrasena">Contraseña</label>
+                    <input class="m-3" type="password" name="contrasena" placeholder="Contraseña" pattern="^.{4,20}$" title="Min. 4 caracteres" required/>
                     <label for="admin">Tipo de Usuario</label>
                     <select class="m-3" type="number" name="accesoAdmin">
                         <option value="0">Usuario</option>

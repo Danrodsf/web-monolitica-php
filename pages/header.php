@@ -12,8 +12,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
-            <title>Php-Web-App</title>
+            <link rel="stylesheet" href="http://localhost:80/web-monolitica-php/styles/index.css">
+            <title>web-monolitica-php</title>
           </head>
 
           <body>
@@ -24,11 +24,14 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-md-center" id="collapse">
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="http://localhost:80/PHP-Web-app/pages/usuarios/recuperarContraseña.php">Recuperar Contraseña</a>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="http://localhost:80/web-monolitica-php/pages/usuarios/loginUsuario.php">Login</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/registroUsuario.php">Registro</a>
+                      <a class="nav-link" aria-current="page" href="http://localhost:80/web-monolitica-php/pages/usuarios/recuperarContraseña.php">Recuperar Contraseña</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/registroUsuario.php">Registro</a>
                     </li>
                   </ul>
                 </div>
@@ -48,7 +51,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
+            <link rel="stylesheet" href="http://localhost:80/web-monolitica-php/styles/index.css">
             <title>Document</title>
           </head>
 
@@ -61,13 +64,13 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="collapse">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="http://localhost:80/PHP-Web-app/pages/user/cartaPlatos.php">Carta</a>
+                      <a class="nav-link" aria-current="page" href="http://localhost:80/web-monolitica-php/pages/user/cartaPlatos.php">Carta</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/perfilUsuario.php">Perfil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/logout.php">Logout</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/logout.php">Logout</a>
                     </li>
                   </ul>
                 </div>
@@ -87,7 +90,7 @@
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-              <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
+              <link rel="stylesheet" href="http://localhost:80/web-monolitica-php/styles/index.css">
               <title>Document</title>
             </head>
 
@@ -100,19 +103,19 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="collapse">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="http://localhost:80/PHP-Web-app/pages/platos/cartaPlatos.php">Carta</a>
+                      <a class="nav-link" aria-current="page" href="http://localhost:80/web-monolitica-php/pages/platos/cartaPlatos.php">Carta</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/ingredientes/mostrarIngrediente.php">Ingredientes</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/ingredientes/mostrarIngrediente.php">Ingredientes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/perfilUsuario.php">Perfil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/PHP-Web-app/pages/usuarios/logout.php">Logout</a>
+                      <a class="nav-link" href="http://localhost:80/web-monolitica-php/pages/usuarios/logout.php">Logout</a>
                     </li>
                   </ul>
                 </div>

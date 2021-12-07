@@ -8,7 +8,7 @@
     $email = $_POST['email'];
 
     // Consulta
-    $resultado = $mysqli->query("SELECT contraseña FROM usuario WHERE email='$email'");
+    $resultado = $mysqli->query("SELECT * FROM usuario WHERE email='$email'");
     $reg=$resultado->fetch_assoc();
 
     if ($reg) {
@@ -16,9 +16,9 @@
         echo '
             <div class="main d-flex justify-content-center align-items-center">
                 <div class="card">
-                    <h5 class="card-header bg-dark text-white-50">Contraseña de: ' . ($_POST["email"]) . '</h5>
+                    <h5 class="card-header bg-dark text-white-50">Contraseña de: '.$reg['email'].'</h5>
                     <div class="card-body d-flex flex-column bg-light p-4">
-                        <p>Contraseña: '.$reg['contraseña'].'</p>
+                        <p>Contraseña: '.$reg['contrasena'].'</p>
                         <a class="btn red" href="../../index.php">Volver</a>
                     </div>
                 </div>

@@ -18,7 +18,7 @@
                         <div class="card-body d-flex flex-column p-4 bg-light">
                             <p class="m-3">Tu id de usuario: '.$_SESSION['id'].'</p>
                             <p class="m-3">Tu correo: '.$_SESSION['email'].'</p>
-                            <p class="m-3">Tu Contraseña: '.$_SESSION['contraseña'].'</p>
+                            <p class="m-3">Tu Contraseña: '.$_SESSION['contrasena'].'</p>
                             <a class="m-3 btn btn-danger"href="logout.php">Cerrar Sesión</a>
                         </div>
                     </div>

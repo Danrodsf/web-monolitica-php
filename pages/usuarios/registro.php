@@ -16,9 +16,9 @@
 
     } else {
 
-        if ($_POST['nombre'] !== "" && $_POST['email'] !== "" && $_POST['contraseña'] !== "") {
+        if ($_POST['nombre'] !== "" && $_POST['email'] !== "" && $_POST['contrasena'] !== "") {
 
-            $mysqli->query('INSERT INTO usuario (nombre, email, contraseña) VALUES ("'.$_POST['nombre'].'","'. $_POST['email'].'","'. $_POST['contraseña'].'");');
+            $mysqli->query('INSERT INTO usuario (nombre, email, contrasena) VALUES ("'.$_POST['nombre'].'","'. $_POST['email'].'","'. $_POST['contrasena'].'");');
             echo '<div class="main d-flex flex-column justify-content-center align-items-center"><h2>Usuario Registrado con éxito</h2><a class="btn red" href="../../index.php">Volver</a></div>';
 
         } else {
