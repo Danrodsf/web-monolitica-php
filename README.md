@@ -3,6 +3,7 @@
   <h3>Web-PHP-Monolítica</h3>
 
 Daniel Rodriguez
+<br />
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
   <p>
